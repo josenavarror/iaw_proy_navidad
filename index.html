@@ -8,26 +8,86 @@
 </head>
 <body>
     <header>
-        <h1>VIAJES BOSCO</h1>
-        <p class="slogan">Las mejores aventuras por todo el mundo gestionadas por su propio centro educativo</p>
-        <img class="flecha" src="img/abajo-1.png" alt="flecha">
-        <nav>
-            <a href="index.html">INTRODUCCIÓN</a> | 
-            <a href="">INDIA</a> | 
-            <a href="">MÉXICO</a> | 
-            <a href="">NUEVA ZELANDA</a> | 
-            <a href="">PERÚ</a> | 
-            <a href="">ISLANDIA</a> | 
-            <a href="">JAPÓN</a>
-        </nav>
+        <div id="portada">
+            <h1>VIAJES BOSCO</h1>
+            <p class="slogan">Las mejores aventuras por todo el mundo gestionadas por su propio centro educativo</p>
+            <a href="#introduccion"><img class="flecha" src="img/abajo-1.png" alt="flecha"></a>
+        </div>
+        <div id="menu">
+            <nav>
+                <a href="index.html">INTRODUCCIÓN</a>&nbsp;&nbsp;
+                <a href="#india">INDIA </a>&nbsp;&nbsp;
+                <a href="#mexico">MÉXICO</a>&nbsp;&nbsp;
+                <a href="#nz">NUEVA ZELANDA</a>&nbsp;&nbsp;
+                <a href="#peru">PERÚ</a>&nbsp;&nbsp;
+                <a href="#islandia">ISLANDIA</a>&nbsp;&nbsp;
+                <a href="#japon">JAPÓN</a>
+            </nav>
+        </div>
+        
     </header>
     <main>
         <section id="introduccion">
             <h2>NO SUEÑES, VUELA DE VERDAD</h2>
             <p>Tenemos los mejores aviones hacia destinos de todo el planeta. Sólo dinos dónde quieres ir</p>
-            <picture class="toda">
-                <!--<img src="img/viaje.jpg" alt="Viaje">-->
-            </picture>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <picture>
+                            <img class="grande" src="img/viaje.jpg" alt="Viaje">
+                        </picture>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="india">
+                        <h2>INDIA</h2>
+                        <figure>
+                            <img class="pequena" src="img/india.jpg" alt="India">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                    <td id="mexico">
+                        <h2>MÉXICO</h2>
+                        <figure>
+                            <img class="pequena" src="img/mexico.jpg" alt="México">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nz">
+                        <h2>NUEVA ZELANDA</h2>
+                        <figure>
+                            <img class="pequena" src="img/nuevazelanda.jpg" alt="Nueva Zelanda">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                    <td id="peru">
+                        <h2>PERÚ</h2>
+                        <figure>
+                            <img class="pequena" src="img/peru.jpg" alt="Perú">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="islandia">
+                        <h2>ISLANDIA</h2>
+                        <figure>
+                            <img class="pequena" src="img/islandia.jpg" alt="Islandia">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                    <td id="japon">
+                        <h2>JAPÓN</h2>
+                        <figure>
+                            <img class="pequena" src="img/japon.jpg" alt="Japón">
+                        </figure>
+                        <figcaption>Haz clic para elegir este destino</figcaption>
+                    </td>
+                </tr>
+            </table>
+            
         </section>
         <section id="formulario">
 

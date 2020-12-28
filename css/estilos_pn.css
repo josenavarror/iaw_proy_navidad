@@ -1,20 +1,21 @@
 /*Fichero de estilos para el Proyecto de Navidad - IAW curso 2020/21*/
 
-/*Fuentes*/
+/*Fuentes **********************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
-/*Fondo*/
+
+/*Fondo **********************************************************/
 body {
     background-image:url("../img/fondo.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
+/*Fuentes, tamaños, colores...**********************************************************/
 h1,.slogan,a{
     color:white;
-    text-align: center;
 }
 
 h1{
@@ -23,41 +24,78 @@ h1{
     font-weight: 700;
 }
 
+h2{
+    font-family: 'Source Sans Pro','Lucida Sans';
+    font-size:3em;
+    font-weight:700;
+    /*line-height: 0.5;*/
+}
+
+a{
+    text-decoration: none;
+}
+
 .slogan{
     font-family: 'Merriweather', 'Lucida Sans';
     font-style: italic;
+    font-size: 2em;
     font-stretch: expanded;
 }
 
-.flecha:hover{
-    source="img/abajo2.jpg";
+/*Centrados ******************************************************/
+h2,#portada,#menu,address,p,figcaption{
+    text-align:center;
 }
 
-picture.toda{
-    width:800px;
-    height: auto;
+
+/*Capas  **********************************************************/
+#portada{
+    /*position:fixed;
+    bottom:100px;*/
 }
 
-nav{
-    background-color:rgb(38, 0, 255);
-    text-align: center;
-    margin:0px 250px;
+#menu{
+    /*position:fixed;
+    bottom:0;*/
+    background-color:#474b50;
+    padding-top:15px;
+    height:50px;
+    width:900px;
+    margin-left:20%;
+    margin-right:20%;
+    font-family: 'Source Sans Pro','Lucida Sans';
 }
 
 section{
     width:900px;
-    margin-left:20%;
-    margin-right:20%;
+    margin:0 20%;
     background-color: white;
 }
 
+/*Imágenes **********************************************************/
+.grande{
+    width:800px;
+    height: auto;
+    padding:0 40px;
+}
+
+.pequena{
+    width: 370px;
+    height:auto;
+}
+
+p,figcaption{
+    font-size:1.5em;
+    font-family: 'Merriweather', 'Lucida Sans';
+    font-style: italic;
+}
+
+/*Autor  **********************************************************/
 address{
     width:900px;
-    margin-left:20%;
-    margin-right:20%;
+    margin:0 20%;
     color:white;
     font-size:20px;
     background-color: #99344e;
     margin-top:100px;
-    text-align:center;
 }
