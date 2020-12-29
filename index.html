@@ -86,11 +86,29 @@
                         <figcaption>Haz clic para elegir este destino</figcaption>
                     </td>
                 </tr>
-            </table>
-            
+            </table>  
         </section>
         <section id="formulario">
-
+            <h2>ENVÍO DE DATOS</h2>
+            <form method="POST" action="">
+                <label for="nombre">NOMBRE</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="apellidos">APELLIDOS</label><br>
+                <input type="text" name="apellidos" id="apellidos"><br>
+                <label for="email">E-MAIL</label><br>
+                <input type="email" name="email" id="email"><br>
+                <fieldset>
+                    <legend>VIAJES DESEADOS</legend>
+                    <input type="checkbox" value="india"><strong>INDIA</strong>
+                    <input type="checkbox" value="mexico"><strong>MÉXICO</strong>
+                    <input type="checkbox" value="nz"><strong>NUEVA ZELANDA</strong>
+                    <input type="checkbox" value="peru"><strong>PERÚ</strong>
+                    <input type="checkbox" value="islandia"><strong>ISLANDIA</strong>
+                    <input type="checkbox" value="japon"><strong>JAPÓN</strong> <br>
+                </fieldset>
+                
+                <button>ENVIAR</button>
+            </form>
         </section>
     </main>
     <footer>
