@@ -1,20 +1,25 @@
 /*Fichero de estilos para el Proyecto de Navidad - IAW curso 2020/21*/
+/*José Navarro Roldán*/
 
-/*Fuentes **********************************************************/
+/*Fuentes*/
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
 
-/*Fondo **********************************************************/
+/*Fondo*/
+
 body {
     background-image:url("../img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin-bottom:300px;
+    text-align:center;
 }
 
-/*Fuentes, tamaños, colores...**********************************************************/
+/*Fuentes, tamaños, colores...*/
+
 h1,.slogan,a{
     color:white;
 }
@@ -43,12 +48,16 @@ a{
     font-stretch: expanded;
 }
 
-/*Formulario **************************************************/
-label,button,legend,strong{
-    font-family: 'Source Sans Pro','Lucida Sans';
+p,figcaption{
+    font-size:1.5em;
+    font-family: 'Merriweather', 'Lucida Sans';
+    font-style: italic;
 }
 
+/*Formulario*/
+
 label,legend,strong{
+    font-family: 'Source Sans Pro','Lucida Sans';
     font-size:0.8em;
     color:#484b50;
 }
@@ -56,6 +65,10 @@ label,legend,strong{
 label,input,button{
     margin:0 40px;
     line-height: 2;
+}
+
+#formulario h2{
+    text-align: center;
 }
 
 input[type="text"],input[type="email"]{
@@ -74,6 +87,7 @@ fieldset{
 }
 
 button{
+    font-family: 'Source Sans Pro','Lucida Sans';
     width:370px;
     background-color:#cad1ce;
     margin-bottom:40px;
@@ -86,27 +100,22 @@ button:hover{
     border-color:#4096a5;
 }
 
-/*Centrados ******************************************************/
-h2,#portada,#menu,address,p,figcaption{
-    text-align:center;
-}
+/*Capas*/
 
-
-/*Capas  **********************************************************/
 #portada{
     /*position:fixed;
     bottom:100px;*/
 }
 
 #menu{
-    /*position:fixed;
-    bottom:0;*/
+    /*position:sticky;
+    top:0;*/
     background-color:#474b50;
     padding-top:15px;
     height:50px;
     width:900px;
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:15%;
+    margin-right:15%;
     font-family: 'Source Sans Pro','Lucida Sans';
 }
 
@@ -116,7 +125,7 @@ h2,#portada,#menu,address,p,figcaption{
 
 section{
     width:900px;
-    margin:0 20%;
+    margin:0 15%;
     margin-bottom:0;
     background-color: white;
 }
@@ -125,9 +134,11 @@ section{
     background-color:#cad1ce;
     margin-top:0;
     margin-bottom:0;
+    text-align:left;
 }
 
-/*Imágenes **********************************************************/
+/*Imágenes*/
+
 .grande{
     width:800px;
     height: auto;
@@ -139,16 +150,15 @@ section{
     height:auto;
 }
 
-p,figcaption{
-    font-size:1.5em;
-    font-family: 'Merriweather', 'Lucida Sans';
-    font-style: italic;
+img.flecha:hover{
+    content:url(img/abajo2.png);
 }
 
-/*Autor  **********************************************************/
+/*Autor */
+
 address{
     width:900px;
-    margin:0 20%;
+    margin:0 15%;
     color:white;
     font-size:20px;
     background-color: #99344e;
